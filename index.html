@@ -22,7 +22,7 @@
     <script>
       System.config({packages:{
         app: {format: 'register',defaultExtension: 'js'}
-      }});
+      }, map:{app: 'dist'}});
       System.import('app/main')
             .then(null, console.error.bind(console));
     </script>
